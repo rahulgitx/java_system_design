@@ -1,0 +1,4 @@
+Things to be extensible:
+ - no of players
+ - no of rows and columns
+ - piece of board (cell)

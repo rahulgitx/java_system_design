@@ -1,0 +1,24 @@
+Why not inheritance ??
+
+If we choose multi level inheritance we'll go by a heirarchy such as
+                                       Vehicle
+                                    /            \
+                     NormalDriveVehicle               SpecialDriveVehicle
+                     /            \                 /                   \
+             TransportVehicle  GoodsVehicle        SportsCar       OffRoadCar
+
+
+but here suppose we have a new method manufactureCompany() which also have a type say A and B and we want to save the code
+duplicacy again
+
+so to introduce this in multi level inheritance we'll have to add this in the second
+                                                                                           Vehicle
+                                                                                     /                    \
+                                                                      CompanyTypeA                      CompanyTypeB
+                                                                     /           \                         /               \
+                     NormalDriveVehicle               SpecialDriveVehicle                   NormalDriveVehicle               SpecialDriveVehicle
+                     /            \                 /                   \                       /            \                 /                   \
+             TransportVehicle  GoodsVehicle        SportsCar       OffRoadCar           TransportVehicle  GoodsVehicle        SportsCar       OffRoadCar
+
+
+             this is making the structure more complex and is enforcing to make more changes violating the open closed principle.
